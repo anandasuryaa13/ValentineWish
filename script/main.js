@@ -46,7 +46,7 @@ const animationTimeline = () => {
         opacity: 0,
         y: 10,
       },
-      "+=4"
+      "+=3"
     )
     .to(
       ".two",
@@ -55,7 +55,7 @@ const animationTimeline = () => {
         opacity: 0,
         y: 10,
       },
-      "+=4"
+      "+=3"
     )
     .from(".three", 0.7, {
       opacity: 0,
@@ -69,7 +69,7 @@ const animationTimeline = () => {
         opacity: 0,
         y: 10,
       },
-      "+=4"
+      "+=3"
     )
     .from(".four", 0.7, {
       scale: 0.2,
@@ -98,12 +98,12 @@ const animationTimeline = () => {
         opacity: 0,
         y: -150,
       },
-      "+=4"
+      "+=1.5"
     )
     .from(".idea-1", 0.7, ideaTextTrans)
-    .to(".idea-1", 0.7, ideaTextTransLeave, "+=2")
+    .to(".idea-1", 0.7, ideaTextTransLeave, "+=1.5")
     .from(".idea-2", 0.7, ideaTextTrans)
-    .to(".idea-2", 0.7, ideaTextTransLeave, "+=2")
+    .to(".idea-2", 0.7, ideaTextTransLeave, "+=1.5")
     .from(".idea-3", 0.7, ideaTextTrans)
     .to(".idea-3 strong", 0.5, {
       scale: 1.2,
@@ -111,9 +111,9 @@ const animationTimeline = () => {
       backgroundColor: "rgb(254, 166, 14)",
       color: "#fff",
     })
-    .to(".idea-3", 0.7, ideaTextTransLeave, "+=3")
+    .to(".idea-3", 0.7, ideaTextTransLeave, "+=2")
     .from(".idea-4", 0.7, ideaTextTrans)
-    .to(".idea-4", 0.7, ideaTextTransLeave, "+=3")
+    .to(".idea-4", 0.7, ideaTextTransLeave, "+=2")
     .from(
       ".idea-5",
       0.7,
@@ -125,7 +125,7 @@ const animationTimeline = () => {
         z: 10,
         opacity: 0,
       },
-      "+=4"
+      "+=1"
     )
     .to(
       ".idea-5 span",
@@ -134,7 +134,7 @@ const animationTimeline = () => {
         rotation: 90,
         x: 8,
       },
-      "+=2"
+      "+=0.5"
     )
     .to(
       ".idea-5",
@@ -143,7 +143,7 @@ const animationTimeline = () => {
         scale: 0.2,
         opacity: 0,
       },
-      "+=4"
+      "+=2.5"
     )
     .staggerFrom(
       ".idea-6 span",
@@ -166,7 +166,7 @@ const animationTimeline = () => {
         ease: Expo.easeOut,
       },
       0.2,
-      "+=2"
+      "+=1"
     )
     .staggerFromTo(
       ".baloons img",
@@ -191,7 +191,7 @@ const animationTimeline = () => {
         y: -25,
         rotationZ: -45,
       },
-      "-=1"
+      "-=2"
     )
     .from(".hat", 0.5, {
       x: -100,
@@ -262,7 +262,7 @@ const animationTimeline = () => {
       {
         rotation: 90,
       },
-      "+=3"
+      "+=1"
     );
 
    //tl.seek("currentStep");
