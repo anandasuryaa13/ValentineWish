@@ -278,13 +278,6 @@ const animationTimeline = () => {
     playBtn.style.display = "none"; // Sembunyikan tombol setelah diklik
   });
 
-  // Di dalam event listener replyBtn, tambahkan:
-  replyBtn.addEventListener("click", () => {
-    tl.restart();
-    audioElement.currentTime = 0; // Reset audio ke awal
-    audioElement.play();
-  });
-
   // Restart Animation on click
   const replyBtn = document.getElementById("replay");
   replyBtn.addEventListener("click", () => {
