@@ -14,16 +14,16 @@
 <body
   style="background-image: url('img/bg.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center;">
 
-  <audio id="myAudio" autoplay loop muted>
+  <audio id="myAudio" loop>
     <source src="img/taylor.mp3" type="audio/mpeg">
-    Your browser does not support the audio tag.
   </audio>
 
   <script>
     window.addEventListener("load", function () {
-      let audio = document.getElementById("myAudio");
-      audio.muted = false;  // Unmute setelah halaman dimuat
-      audio.play().catch(error => console.log("Autoplay diblokir:", error));
+      setTimeout(() => {
+        let audio = document.getElementById("myAudio");
+        audio.play().catch(error => console.log("Autoplay diblokir:", error));
+      }, 1000); // Delay 2 detik
     });
   </script>
 
