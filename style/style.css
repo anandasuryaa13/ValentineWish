@@ -5,6 +5,16 @@ html {
 body {
   margin: 0;
   font-family: "Work Sans", sans-serif;
+  background-image: url('img/background.png');
+  /* Path ke gambar */
+  background-size: cover;
+  /* Gambar menutupi seluruh layar */
+  background-repeat: no-repeat;
+  /* Tidak mengulang gambar */
+  background-position: center;
+  /* Gambar dipusatkan */
+  background-attachment: fixed;
+  /* Gambar tetap saat di-scroll */
 }
 
 .container {
@@ -30,7 +40,7 @@ body {
   top: 0;
 }
 
-.container > div {
+.container>div {
   position: absolute;
   left: 0;
   right: 0;
@@ -41,7 +51,7 @@ body {
   font-size: 4.5rem;
 }
 
-.one > img {
+.one>img {
   vertical-align: middle;
   margin-bottom: 10px;
   max-width: 100%;
