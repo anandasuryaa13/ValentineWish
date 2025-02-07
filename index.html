@@ -11,21 +11,11 @@
   <link rel="stylesheet" href="style/style.css" />
 </head>
 
-<body
-  style="background-image: url('img/bg.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center;">
+<body style="background-image: url('img/bg.jpg'); background-size: cover;">
 
-  <audio id="myAudio" loop>
-    <source src="img/taylor.mp3" type="audio/mpeg">
+  <audio autoplay loop>
+    <source src="img/tes.mp3" type="audio/mpeg"> Teks ini muncul kalau ngga support
   </audio>
-
-  <script>
-    window.addEventListener("load", function () {
-      setTimeout(() => {
-        let audio = document.getElementById("myAudio");
-        audio.play().catch(error => console.log("Autoplay diblokir:", error));
-      }, 1000); // Delay 2 detik
-    });
-  </script>
 
   <div class="container">
     <div class="one">
@@ -34,7 +24,7 @@
         <span id="name">Andin</span>
       </h1>
 
-      <p class="two" id="greetingText">Happy Valentine's Day ya sayanggg</p>
+      <p class="two" id="greetingText">Happy Valentine's Day ya sayanggg hihi</p>
     </div>
     <div class="three">
       <p>Semogaa kamu suka sama hadiahnya yaaa :D, Maaf kalo ngga seberapa :( </p>
