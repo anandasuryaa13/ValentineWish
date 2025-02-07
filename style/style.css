@@ -298,3 +298,8 @@ body {
     font-weight: lighter;
   }
 }
+
+
+#replay strong {
+  color: red !important;
+}
