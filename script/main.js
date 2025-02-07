@@ -265,8 +265,25 @@ const animationTimeline = () => {
       "+=1"
     );
 
-   //tl.seek("currentStep");
-   //tl.timeScale(2);
+  //tl.seek("currentStep");
+  //tl.timeScale(2);
+
+  // Di dalam fungsi animationTimeline, tambahkan:
+  const audioElement = document.getElementById("myAudio");
+  const playBtn = document.getElementById("playBtn");
+
+  // Handler untuk tombol play
+  playBtn.addEventListener("click", () => {
+    audioElement.play();
+    playBtn.style.display = "none"; // Sembunyikan tombol setelah diklik
+  });
+
+  // Di dalam event listener replyBtn, tambahkan:
+  replyBtn.addEventListener("click", () => {
+    tl.restart();
+    audioElement.currentTime = 0; // Reset audio ke awal
+    audioElement.play();
+  });
 
   // Restart Animation on click
   const replyBtn = document.getElementById("replay");

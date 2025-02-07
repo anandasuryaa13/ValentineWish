@@ -303,3 +303,13 @@ body {
 #replay strong {
   color: red !important;
 }
+
+#playBtn {
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: none;
+  background: #ff69b4;
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
